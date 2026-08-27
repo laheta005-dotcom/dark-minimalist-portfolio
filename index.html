@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البورتفوليو الشخصي والمؤسسي | Minimalist Dark Portfolio</title>
+  <!-- خطوط عربية وإنجليزية عصرية -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- الهيدر وشريط التنقل -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-accent">M.A</span> | PORTFOLIO
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#about">الخبرات والمجالات</a>
+        <a href="#portfolio">معرض الأعمال</a>
+        <a href="#certificates">الشهادات والورش</a>
+        <a href="#contact" class="nav-btn">تواصل معي</a>
+      </nav>
+      <button class="mobile-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. قسم الواجهة الرئيسية (Hero Section) -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-badge">حضور مهني دولي ومؤسسي</div>
+      <h1 class="hero-title">صانع محتوى وثائقي ومستشار إعلامي للجهات الدولية</h1>
+      <p class="hero-desc">
+        متخصص في إنتاج وتوثيق المشاريع الإنسانية، التنمية المستدامة، وحقوق الإنسان أمام السفارات والمنظمات العالمية بطابع عصري ورزين.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">عرض الأعمال المرئية <i class="fa-solid fa-arrow-left"></i></a>
+        <a href="#contact" class="btn btn-secondary">تحميل السيرة الذاتية CV <i class="fa-solid fa-download"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. قسم الخبرات والمجالات (Expertise) -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>المجالات والخبرات الرئيسية</h2>
+        <p>تركيز عالي على قضايا الإنسان والتنمية والإنتاج الميداني الاحترافي</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card feature-card">
+          <i class="fa-solid fa-scale-balanced card-icon"></i>
+          <h3>حقوق الإنسان والبيئة</h3>
+          <p>توثيق المبادرات التنموية وقضايا حقوق الإنسان وفق المعايير الدولية المستهدفة للجهات العالمية.</p>
+        </div>
+        <div class="card feature-card">
+          <i class="fa-solid fa-video card-icon"></i>
+          <h3>الإنتاج الوثائقي والتغطيات</h3>
+          <p>إخراج وإنتاج الأفلام الوثائقية والتغطيات الفوتوغرافية والتلفزيونية للمشاريع الميدانية.</p>
+        </div>
+        <div class="card feature-card">
+          <i class="fa-solid fa-globe card-icon"></i>
+          <h3>التواصل الدولي والسفارات</h3>
+          <p>صياغة وإعداد الهويات المرئية والمواد الإعلامية الموجهة للمنظمات الدولية والدبلوماسية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. قسم معرض الأعمال التفاعلي (Portfolio Grid) -->
+  <section id="portfolio" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>معرض الأعمال والمرئيات</h2>
+        <p>شبكة مرئية عرضية عريضة ونظيفة تغطي إلنتاجات الفيديو والتغطيات</p>
+      </div>
+
+      <!-- فلترة الأعمال -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="docs">أفلام وثائقية</button>
+        <button class="filter-btn" data-filter="rights">حقوق إنسان</button>
+        <button class="filter-btn" data-filter="coverage">تغطيات ميدانية</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="portfolio-card" data-category="docs">
+          <div class="portfolio-thumb">
+            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="وثائقي">
+            <div class="portfolio-overlay">
+              <span class="category-tag">فيديو وثائقي</span>
+              <h3>مشروع التنمية المستدامة 2024</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="rights">
+          <div class="portfolio-thumb">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="حقوق إنسان">
+            <div class="portfolio-overlay">
+              <span class="category-tag">حقوق إنسان</span>
+              <h3>تغطية برنامج الإغاثة الدولي</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="coverage">
+          <div class="portfolio-thumb">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="تغطيات">
+            <div class="portfolio-overlay">
+              <span class="category-tag">تغطية فوتوغرافية</span>
+              <h3>معرض المشاركات الدولية</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="docs">
+          <div class="portfolio-thumb">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="وثائقي">
+            <div class="portfolio-overlay">
+              <span class="category-tag">فيلم قصير</span>
+              <h3>صناع الأمل - التوثيق الميداني</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. الشهادات والمشاركات الدولية -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>الشهادات والمشاركات الدولية</h2>
+        <p>سجل حافل بالورش والمشاركات الرسمية</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>مؤتمر الإعلام الدولي وحقوق الإنسان</h3>
+            <p>مشاركة رسمية وتغطية خاصة بتمويل منظمات دولية غير حكومية.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>ورشة الإخراج الوثائقي المتقدم</h3>
+            <p>شهادة تقديرية في صناعة وتوثيق الأفلام الإنسانية القصيرة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. التواصل (Contact Form) -->
+  <section id="contact" class="section bg-alt">
+    <div class="container text-center">
+      <div class="section-header">
+        <h2>تواصل للمشاريع والاستشارات</h2>
+        <p>جاهز لبناء وتوثيق حضورك المؤسسي أمام الجهات العالمية</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" placeholder="الاسم الكامل" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="البريد الإلكتروني" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="تفاصيل المشروع أو الاستفسار..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة الآن</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 جميع الحقوق محفوظة | بورتفوليو مؤسسي وشخصي عصري</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
